@@ -1,40 +1,48 @@
 {
-  "name": "@toy-element/workspace",
+  "name": "@hsy-element/workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter @toy-element/play dev",
-    "docs:dev": "pnpm --filter @toy-element/docs dev",
-    "docs:build": "pnpm --filter @toy-element/docs build",
-    "test": "echo \"todo\""
+    "dev": "pnpm --filter @hsy-element/play dev",
+    "story": "pnpm --filter @hsy-element/play storybook",
+    "docs:dev": "pnpm --filter @hsy-element/docs dev",
+    "docs:build": "pnpm --filter @hsy-element/docs build",
+    "test": "pnpm --filter @hsy-element/components test",
+    "build": "pnpm --filter hsy-element build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.18.3",
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.19.25",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/tsconfig": "^0.5.1",
+    "move-file-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
     "postcss-each-variables": "^0.3.0",
     "postcss-for": "^2.1.1",
     "postcss-nested": "^6.2.0",
+    "release-it": "^19.0.6",
     "typescript": "^5.9.3",
     "vite": "^5.4.21",
     "vitest": "^1.6.1",
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
+    "@hsy-element/hooks": "workspace:*",
+    "@hsy-element/theme": "workspace:*",
+    "@hsy-element/utils": "workspace:*",
+    "hsy-element": "workspace:*",
     "lodash-es": "^4.17.21",
-    "vue": "^3.5.25",
-    "toy-element": "workspace:*",
-    "@toy-element/hooks": "workspace:*",
-    "@toy-element/utils": "workspace:*",
-    "@toy-element/theme": "workspace:*"
+    "vue": "^3.5.25"
   }
 }

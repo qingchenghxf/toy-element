@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import ToyElement from 'toy-element'
+import ToyElement from 'hsy-element'
+import '@hsy-element/theme/index.css'
 
 createApp(App).use(ToyElement).mount('#app')

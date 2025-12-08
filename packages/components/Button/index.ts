@@ -1,4 +1,8 @@
-import button from "./Button.vue";
-import { withInstall} from "@toy-element/utils"
+import Button from "./Button.vue";
+import ButtonGroup from "./ButtonGroup.vue";
+import { withInstall} from "@hsy-element/utils"
 
-export const ErButton = withInstall(button);
+export const ErButton = withInstall(Button);
+export const ErButtonGroup = withInstall(ButtonGroup);
+
+export * from "./types";

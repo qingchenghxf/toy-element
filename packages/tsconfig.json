@@ -20,8 +20,19 @@
       "strict": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
-      "noFallthroughCasesInSwitch": true
+      "noFallthroughCasesInSwitch": true,
+      
+      /* Path mapping */
+      "baseUrl": ".",
+      "paths": {
+        "hsy-element": ["./core/index.ts"],
+        "hsy-element/*": ["./core/*"],
+        "@hsy-element/utils": ["./utils/index.ts"],
+        "@hsy-element/components": ["./components/index.ts"],
+        "@hsy-element/utils/*": ["./utils/*"],
+        "@hsy-element/components/*": ["./components/*"]
+      }
     },
-    "include": ["packages/**/*.ts", "packages/**/*.tsx", "packages/**/*.vue"]
+    "include": ["**/*.ts", "**/*.tsx", "**/*.vue"]
   }
   
